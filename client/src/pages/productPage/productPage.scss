@@ -1,0 +1,67 @@
+@import "../../../node_modules/react-tabs/style/react-tabs.scss";
+
+.product-card {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .carousel-root {
+    .carousel-status {
+      display: none;
+    }
+  }
+
+  tr,
+  td,
+  h1 {
+    cursor: default;
+  }
+  #sailorTableArea {
+    max-height: 300px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  #sailorTable {
+    white-space: normal;
+  }
+
+  thead {
+    th {
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: start;
+      padding: 15px 10px;
+    }
+  }
+
+  tbody {
+    display: block;
+    overflow: auto;
+
+    th {
+      font-size: 0.9rem;
+      font-weight: 100;
+      text-align: start;
+    }
+  }
+  thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-description {
+    width: 100%;
+    margin: 0 !important;
+    h1 {
+      font-size: 1.4rem;
+    }
+  }
+}
