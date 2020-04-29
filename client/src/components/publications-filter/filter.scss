@@ -1,0 +1,98 @@
+.filter {
+  display: flex;
+  margin: 0;
+  padding: 10px 5px;
+  flex-wrap: wrap;
+
+  p,
+  span {
+    color: #fff;
+  }
+
+  input {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  select {
+    width: 100%;
+    height: 34px;
+  }
+
+  .city-type-wrapper,
+  .rooms-price-wrapper {
+    display: flex;
+  }
+
+  .city-filter {
+    width: 220px;
+    margin-left: 0.5rem;
+  }
+
+  .type-filter {
+    width: 180px;
+  }
+
+  .rooms-filter {
+    width: 180px;
+  }
+
+  .price-filter {
+    width: 300px;
+
+    div {
+      display: flex;
+      input {
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 135px;
+        margin: 0 5px;
+        padding: 6px 5px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    .btn-success {
+      margin-top: 10px;
+      padding: 5px 20px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .city-type-wrapper,
+    .rooms-price-wrapper {
+      margin: 2%;
+      width: 100%;
+
+      .city-filter,
+      .type-filter,
+      .rooms-filter,
+      .price-filter {
+        width: 50%;
+      }
+
+      .price-filter {
+        div {
+          input {
+            width: 48%;
+          }
+        }
+      }
+    }
+    .filter-buttons {
+      flex-direction: row;
+
+      .btn-success {
+        margin: 0 15px;
+      }
+    }
+  }
+}
